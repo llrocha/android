@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EnterpriseCard</string>
+    <string name="name">Viela Café</string>
+    <string name="address">R. Dr. Luiz de Freitas Melro, 190 - Centro\nBlumenau - SC, 89010-302</string>
+    <string name="open_hours">De Segunda a Sexta-feira\nDas 08:00 até 19:00</string>
+    <string name="cellphone">(47) 3035-3135</string>
+    <string name="description">Walk-Ins Welcome
+Good For Groups
+Good For Kids
+Take Out
+Delivery
+Waiter Service
+Outdoor Seating</string>
+</resources>
