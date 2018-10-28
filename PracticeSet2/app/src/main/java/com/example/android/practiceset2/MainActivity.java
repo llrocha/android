@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         display3("3 boxes: $" + (raspberryPrice * 3));
 
 
-
+        /*
         int weekday = 5;
         int weekend = 9;
         int optimalHours = 7 * 8;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int day2 = 22;
         int day3 = 18;
         display(day1+day2+day3/3);
-
+        */
     }
 
     /**
