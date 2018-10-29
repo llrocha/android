@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="textTeamA">Corinthians</string>
+    <string name="textTeamB">Santos</string>
+    <string name="offside">Offside</string>
+    <string name="throwin">Throw-in</string>
+    <string name="goalkick">Goal Kick</string>
+    <string name="cornerkick">Corner Kick</string>
+    <string name="redcard">Red Card</string>
+    <string name="yellowcard">Yellow Card</string>
+    <string name="goal">Goal</string>
+    <string name="foul">Foul</string>
+    <string name="reset">Reset</string>
+    <string name="botton_lateral_margin">8dp</string>
+</resources>
