@@ -33,35 +33,198 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/team_a_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="36sp"
-                    android:layout_alignParentRight="true"
-                    android:text="0" />
 
-                <TextView
-                    android:id="@+id/teamARedCardDisplay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"/>
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:text="0"
+                        android:textSize="36sp" />
 
-                <TextView
-                    android:id="@+id/teamAYellowCardDisplay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_bellow="@id/teamARedCardDisplay"
-                    android:text="0"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:orientation="horizontal">
 
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent"/>
+                        <!-- Corner Kick Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/team_a_corner_kick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"/>
+
+                        <TextView
+                            android:id="@+id/team_a_corner_kick_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Goal Kick Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_goal_kick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="G"/>
+
+                            <TextView
+                                android:id="@+id/team_a_goal_kick_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Thrown-in Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_throwins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T"/>
+
+                            <TextView
+                                android:id="@+id/team_a_throwins_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Offsides Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_offsides"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O"/>
+
+                            <TextView
+                                android:id="@+id/team_a_offsides_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Fouls Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_fouls"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="F"/>
+
+                            <TextView
+                                android:id="@+id/team_a_fouls_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Yellow Card Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_yellow_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Y"/>
+
+                            <TextView
+                                android:id="@+id/team_a_yellow_card_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Red Card Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_a_red_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="R"/>
+
+                            <TextView
+                                android:id="@+id/team_a_red_card_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
                 </RelativeLayout>
 
                 <Button
                     android:id="@+id/teamAGoal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:onClick="teamAGoal"
                     android:text="@string/goal" />
 
                 <Button
@@ -70,6 +233,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamACornerKick"
                     android:text="@string/cornerkick" />
 
                 <Button
@@ -78,6 +242,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamAGoalKick"
                     android:text="@string/goalkick" />
 
                 <Button
@@ -86,6 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamAThrowIn"
                     android:text="@string/throwin" />
 
                 <Button
@@ -94,6 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamAOffSide"
                     android:text="@string/offside" />
 
                 <Button
@@ -102,6 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamAFoul"
                     android:text="@string/foul" />
 
                 <Button
@@ -110,6 +278,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamAYellowCard"
                     android:text="@string/yellowcard" />
 
                 <Button
@@ -118,6 +287,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamARedCard"
                     android:text="@string/redcard" />
             </LinearLayout>
 
@@ -126,7 +296,7 @@
                 android:id="@+id/view"
                 android:layout_width="1dp"
                 android:background="@color/colorPrimaryDark"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -145,14 +315,190 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/team_b_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_alignParentLeft="true"
-                    android:textSize="36sp"
-                    android:text="0" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:text="0"
+                        android:textSize="36sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent"/>
+                        <!-- Corner Kick Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_corner_kick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C"/>
+
+                            <TextView
+                                android:id="@+id/team_b_corner_kick_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Goal Kick Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_goal_kick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="G"/>
+
+                            <TextView
+                                android:id="@+id/team_b_goal_kick_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Thrown-in Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_throwins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T"/>
+
+                            <TextView
+                                android:id="@+id/team_b_throwins_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Offsides Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_offsides"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O"/>
+
+                            <TextView
+                                android:id="@+id/team_b_offsides_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Fouls Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_fouls"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="F"/>
+
+                            <TextView
+                                android:id="@+id/team_b_fouls_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Yellow Card Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_yellow_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Y"/>
+
+                            <TextView
+                                android:id="@+id/team_b_yellow_card_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+                        <!-- Red Card Counter -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/team_b_red_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="R"/>
+
+                            <TextView
+                                android:id="@+id/team_b_red_card_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
                 </RelativeLayout>
 
                 <Button
@@ -161,6 +507,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBGoal"
                     android:text="@string/goal" />
 
                 <Button
@@ -169,6 +516,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBCornerKick"
                     android:text="@string/cornerkick" />
 
                 <Button
@@ -177,6 +525,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBGoalKick"
                     android:text="@string/goalkick" />
 
                 <Button
@@ -185,6 +534,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBThrowIn"
                     android:text="@string/throwin" />
 
                 <Button
@@ -193,6 +543,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBOffSide"
                     android:text="@string/offside" />
 
                 <Button
@@ -201,6 +552,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBFoul"
                     android:text="@string/foul" />
 
                 <Button
@@ -209,6 +561,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBYellowCard"
                     android:text="@string/yellowcard" />
 
                 <Button
@@ -217,6 +570,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_marginLeft="8dp"
+                    android:onClick="teamBRedCard"
                     android:text="@string/redcard" />
             </LinearLayout>
 
@@ -231,6 +585,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="reset"
+        android:onClick="resetScore"
         android:text="@string/reset" />
 </RelativeLayout>
