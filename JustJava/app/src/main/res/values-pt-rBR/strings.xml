@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="quantity_text">Quantidade</string>
+    <string name="toppings_text">Coberturas</string>
+    <string name="price_text">Preço</string>
+    <string name="order_summary_text">Resumo do Pedido</string>
+    <string name="order_button">Pedido</string>
+</resources>
